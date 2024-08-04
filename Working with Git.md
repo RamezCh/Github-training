@@ -129,6 +129,17 @@ It means going back in time
 - Green means added
 - Red means deleted
 
-
-
+## Git Configuration
+- git config
+- git config -h or git config -help shows all options
+- 3 Levels of config: Local, Global, System
+- System is highest level and can be accessed at global and local level and to all users
+- Local is current repo, Global is current User(PC), System is all users
+- git config --global --list allows us to see all global config values most of times author details
+- Global file found at /home/GIT/.gitconfig
+- git config --system --list
+- System stored in /etc/gitconfig
+- System config can be overriden by global and local settings and they can be inherited as well
+- git config --local --list shows local config
+- Local found in .git/config
 

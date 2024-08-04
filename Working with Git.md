@@ -117,5 +117,18 @@ It means going back in time
 - We can see hash in git log command or check remote repo for it
 - After revert everything after Hash we gave gets removed
 
+## Git Log
+- Used to check commit history
+- Shows all commits, author details, commit hash, head pointer, date of commit (timestamp), commit message
+- git log -p -<number of commits>
+- git log -p -1 sees last commit
+
+## Git Show
+- Shows detailed INFO like what we did inside the commit
+- git show [<options>] [<object>...]
+- Green means added
+- Red means deleted
+
+
 
 

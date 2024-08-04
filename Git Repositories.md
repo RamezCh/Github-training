@@ -47,3 +47,14 @@ workspace -> add -u > index -> commit -> local repo -> push -> remote repo
 
 remote repo -> fetch -> local repo
 
+## Working with Remote Repo
+- To remove the remote: git remote remove <name>
+- git remote -v lets us get remote name
+- git remote rename <old> <new>
+- git remote show -n <name> gets info about remote
+- git checkout --track lets us inspect a remote repo
+- git checkout --track <remote-repo>/<remote-branch> lets us create a local branch with same name as remote branch
+- git checkout --track -b <local branch> <remote-repo>/<remote-branch> to create local branch with diff name from remote
+- git branch -vv to verify tracking branches
+- git branch --v to see latest commits, commits info and head poitner related info
+

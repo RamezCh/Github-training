@@ -27,3 +27,23 @@ Remote Repo Allows us to:
 
 Actual project work is carried out in local repository and after they are made and committed locally we push them into remote repo
 
+## Terminology - Origin
+Origin is a shorthand name for the remote repository (URL). Gotta make things easier to type right?
+- git clone janedoe@git.ourcompany.com:project.git
+- git.ourcompany.com: f4265(master) -> a6b4c -> 0b743
+- My Computer: f4265(Origin/master | remote/local) -> a6b4c ->0b743
+
+- We use forking if we do not have direct access to remote repository
+- Push to move changes from local to remote
+- Pull to move changes from remote to local
+- Locally we add, commit, push and pull
+- git clone makes a local copy of a remote repo
+- git fetch downloads the meta data
+- git merge merges the changes to local repo
+- git pull executes git fetch and merge internally
+- git pull <remote> = git fetch <remote> + git merge origin/<current-branch>
+
+workspace -> add -u > index -> commit -> local repo -> push -> remote repo
+
+remote repo -> fetch -> local repo
+

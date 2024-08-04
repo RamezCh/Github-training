@@ -71,6 +71,27 @@ If we don't want to add then commit we can combine them
 - It stages tracked files and commits them directly
 - It doesn't add untracked files
 
+## Remove file command
+- git rm <filename>
+- removes file from working directory and deletes from staging area
+
+- git rm --cached <filename>
+- removes file only from staging area
+- We can restore file by using git add again
+
+- git restore <filename>
+- Checks previous code and if changes done, rolls back and we lose all our temporary changes
+
+- git mv <filename> command is used to rename a file or move a file
+
+- git clean removes unwanted files from working directory (untracked files), temporary files
+- It doesn't remove the following: tracked files, committed files, files in .gitignore
+
+- git clean -n does a dry run to show what it will do (safe practice)
+- git clean -f forcefully removes untracked files
+- git clean -x removes files listed in .gitignore
+
+
 
 
 

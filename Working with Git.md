@@ -91,7 +91,31 @@ If we don't want to add then commit we can combine them
 - git clean -f forcefully removes untracked files
 - git clean -x removes files listed in .gitignore
 
+## Check file status
+- git status
+- Shows new files, untracked files, files that are modified
+- It provides a complete summary of file status
+- git status -s gives summary and not detailed output
 
+What if we want to check differences between files?
+- Head refers to latest commit
+- git diff HEAD gives detailed difference in comparison to latest commit
+- git diff shows diff between working directory and staging area
+- git diff --staged shows diff between staging area and last commit
+- This command helps us check diff between commits and be on safe side
+- git diff master <branch_name>
+
+There is third party tool called difftool, it shows comparison in external tool instead of command line
+
+Resetting a file means rolling back the changes
+- git reset --hard resets all files in directory
+- git reset --hard command <filename>
+
+## Reverting a Commit
+It means going back in time
+- git revert <commitHash>
+- We can see hash in git log command or check remote repo for it
+- After revert everything after Hash we gave gets removed
 
 
 

@@ -55,3 +55,22 @@ How do we ignore those files?
 8. access?.log  ignores files named access0.log, access1.log, accessa.log, where the question mark represents any single character
 9. foo?? ignores any file or directory named foo followed by exactly two characters.
 
+## Git Commit Command
+- Working directory -> git add -> Staged -> ? -> Repository
+- git add only preserves them temporary, we need git commit to save them permanently
+- Working directory -> git add -> Staged -> git commit -> Repository
+
+- git commit -m "message"
+- This messages helps identifying what we have changed
+- If we don't put -m, command line will open vim so you put commit message
+- Empty commit messages are rejected
+- Commits are reserved in log file and repository
+
+If we don't want to add then commit we can combine them
+- git commit -am "message"
+- It stages tracked files and commits them directly
+- It doesn't add untracked files
+
+
+
+

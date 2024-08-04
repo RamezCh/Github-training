@@ -143,3 +143,36 @@ It means going back in time
 - git config --local --list shows local config
 - Local found in .git/config
 
+## DEMO
+- git init gitrepo
+- cd gitrepo
+- git status
+- On Branch master, no commits yet, nothing to commit
+- We can manually create files
+- touch Readme.md
+- git status
+- Shows untracked files: Readme.md
+- Lets add it into the staging area
+- git add Readme.md
+- git status
+- Now it shows file available for commit
+- git rm --cached Readme.md
+- Now its back to untracked files
+- git add Readme.md
+- git commit -m "First Commit"
+- git status
+- Nothing to commit again, woo hoo
+- git log
+- We can see a lot of info about our first commit
+- git show <hashID you got>
+- We got a lot more information now!
+- cat .git/config
+- git config --local --list
+- rm Readme.md
+- git status
+- git restore Readme.md
+- git status
+- ls -alrt
+- git rm Readme.md
+- git reset --hard
+- git status

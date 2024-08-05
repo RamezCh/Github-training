@@ -5,3 +5,11 @@ A Basic approach followed in any version control system. Independent development
 - Master is default branch which gets created at time of git initialization
 - Most of development projects have two mainstream branches: Master (final source code), Dev (for development and testing purposes)
 - HEAD or master branch points to the latest commit
+
+## Branching Main Operations
+- Create Branch
+- Delete Branch
+- Rename
+- Publish
+- Switch
+- Compare

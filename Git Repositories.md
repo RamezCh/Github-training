@@ -167,3 +167,8 @@ Before push/pull we need to:
 - git remote -v to validate
 - git push origin master
 
+## Delete a Branch
+- git branch -d branch_name deletes local branch only
+- git branch -D branch_name deletes local and remote branches
+- git push origin --delete branch_name deletes only remote repo branch
+

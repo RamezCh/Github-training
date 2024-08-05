@@ -18,6 +18,16 @@ A Basic approach followed in any version control system. Independent development
 - git branch <new-branch-name>
 - HEAD points to the branch we are currently on (MASTER)
 - git branch -l shows available branches
-- green color = current branch
+- * green color = current branch
 - git branch --list
 - git branch
+
+## Switch and Rename Branch
+- git checkout <other-branch> moves HEAD to latest commit on other branch
+- git branch -m master returns to master branch
+- git checkout -b <new-branch-name> creates a new branch + switches to it
+- git branch -m <new-name> renames current checked out branch
+- git branch -m <old-name> <new-name> renames specific branch
+- git push origin --delete <old-name> to delete branch from remote repo
+- git push -u origin <new-name> to publish new branch to remote repo
+

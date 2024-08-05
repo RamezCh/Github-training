@@ -58,3 +58,15 @@ remote repo -> fetch -> local repo
 - git branch -vv to verify tracking branches
 - git branch --v to see latest commits, commits info and head poitner related info
 
+## Intro to Github
+Cloud-based git repository hosting service. Recently acquired by MicroSoft. Free service as an individual and licensed version for organization. Unlimited Repoistory created. It has GUI and CLI. Provides access control, wikis and basic management tools.
+
+Other similar services:
+- GitLab
+- BitBucket
+- AWS CodeCommit
+- Azure DevOps
+- Codebase
+- Perforce
+- SourceForge
+

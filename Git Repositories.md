@@ -89,3 +89,42 @@ Other similar services:
 - Easy GUI
 
 GitHub has various plans: free, team, enterprise. 
+
+## GitHub Flow
+Setup a repo for entire team. When working on new features, create a branch for that feature. Do not work on Master branch.
+
+## Create a New Repo
+Login Github -> click on + -> give name and select features you want
+- git remote add origin https://GitHub.com/<username><local>
+- origin is variable name for remote repo, you can actually name it as you like but its common practice
+- git remote add origin <remote_repo_url>
+- git remote shows saved remote repo variables
+- git remote -v shows variable and its value
+
+## Configure SSH Key
+Usernames and Pass outdated, lets use keys easier (passwordless communications).
+
+We need to keys private and public. First we need to create key on PC.
+- ls -al ~/.ssh lets us see if we have key
+- id_rsa.pub
+- id_ecdsa.pub
+- id_ed25519.pub
+
+If we don't have public keys we can create them.
+- ssh-keygen -t ed25519 -C "your_email@example.com"
+- if key already exists, we can overwrite it
+
+id_RSA, id_DSA are standard and not required to be loaded into the OS.Public key is used when accessing SSH keys.
+- eval "$(ssh-agent -s)" (Check/Run SSH-agent in background)
+- ssh-add ~/.ssh/id_ed25519 (Add key to SSH-agent)
+- ssh -T git@github.com (Check the SSH connection)
+
+How to upload public key into github:
+- Login GitHub
+- Select SSH and GPG options
+- Click new SSH key
+- Paste public key into key field
+- Private keys will be available in local keys only
+- Public key will be uploaded into remote repo
+- Using public key comunications will be conducted
+

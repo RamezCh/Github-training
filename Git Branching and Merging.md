@@ -51,3 +51,10 @@ When creating a new branch, it will be on local machine and will not be accessib
 - git push <remote> <branchName> = push a specific branch
 - git push <remote> = push current branch
 
+## Type of Branches
+- Feature Branch (Perform development and add features)
+- Master Branch (production ready source code)
+- Develop/Integration Branch (Multiple features are integrated)
+- Release Branch (finalized branch where merging occurs)
+- Hotfix Branch (tempo debugging)
+

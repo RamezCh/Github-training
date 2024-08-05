@@ -58,3 +58,6 @@ When creating a new branch, it will be on local machine and will not be accessib
 - Release Branch (finalized branch where merging occurs)
 - Hotfix Branch (tempo debugging)
 
+## Master Branch
+Git automatically creates a master branch when first commit in a repository is made. All commits by default are done in master branch unless a new branch is created explicitly. Developers must NOT make changes directly in master branch, rather should use feature branch.
+

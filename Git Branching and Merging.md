@@ -13,3 +13,11 @@ A Basic approach followed in any version control system. Independent development
 - Publish
 - Switch
 - Compare
+
+## Create and Check Branch
+- git branch <new-branch-name>
+- HEAD points to the branch we are currently on (MASTER)
+- git branch -l shows available branches
+- green color = current branch
+- git branch --list
+- git branch

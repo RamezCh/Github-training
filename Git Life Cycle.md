@@ -113,3 +113,15 @@ In simple terms:
 - git checkout <commit> cleans it completely
 - reset [commit] <paths> working directory is safe
 - checkout [commit] <paths> working directory isn't safe
+
+## ^(caret symbol) and ~(tilde)
+- HEAD~n means n commits before HEAD
+- nth generation ancestore of HEAD
+- HEAD~ or HEAD~1 means 1 commit before HEAD
+- HEAD~2 goes 2 commits backward and so on..
+- HEAD^ refers to the first parent of HEAD (useful in merges)
+- HEAD^1 is equivalent to HEAD^
+- HEAD^2 refers to the second parent of HEAD (in case of a merge commit)
+- HEAD~n^ refers to the first parent of the nth commit before HEAD
+- HEAD~n^2 refers to the second parent of the nth commit before HEAD
+

@@ -26,3 +26,11 @@ Only files which are already part of Version control System or local repo can mo
 - changes made can be viewed alone with diff with the previous version
 - same thing of adding up file ot the stage and performing staging activity then commit activity
 
+## HEAD
+It is used to point to the last commit or latest commit.
+- git show HEAD
+- It is a pointer that points to the latest commit
+- It keeps on moving with new commits and lets us know about location and specific branch
+- Head can move forward and backward
+- cat .git/HEAD to check HEAD and know which branch
+

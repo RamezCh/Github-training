@@ -34,3 +34,32 @@ It is used to point to the last commit or latest commit.
 - Head can move forward and backward
 - cat .git/HEAD to check HEAD and know which branch
 
+## Check File Status
+- git status
+- Tracked? Un-tracked?
+- Branch Info
+- Ready to commit files
+- modified files
+
+To see details diff:
+- git diff HEAD
+- git diff --summary
+
+To move File to Staging:
+- git add <file name>
+- git add file1 file2 file3..
+- to add all files (including new, deleted, modified files) git add -A, git add --all (both same)
+- git add -u (stages modified and deleted but not new files) | (basically tracked files)
+- git add . (stages new and modified files in current directory)
+- These do not affect remote repo, this is a local operation
+
+Move files from Staging to local Repo:
+- git commit ( will open vim file so you write message )
+- git commit -m "message"
+- empty message or improper message will be rejected
+- git push origin <branchName>
+
+Bypassing Staging:
+- git commit -a (adds all files available in repo)
+- git commit -am "message"
+

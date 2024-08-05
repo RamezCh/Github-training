@@ -125,3 +125,29 @@ In simple terms:
 - HEAD~n^ refers to the first parent of the nth commit before HEAD
 - HEAD~n^2 refers to the second parent of the nth commit before HEAD
 
+## Git Internals
+Git Objects: Files and data are stored in form of Objects but they aren't in readable format. They are simple key-value data store maintained at remote and local repo. Any type of content can be inserted in a Git repo.
+- All files are commited in form of git objects in .git folder
+- .git folder should be secured
+- There are 3 types of objects: blob (contents of a file), tree (directory listing), commit (snapshot of working tree)
+
+Blob:
+- Content of files are stored in form of objects called blobs (Binary Large Objects)
+- Secured
+- Every blob in git is identified by its SHA-1 hash
+- Doesn't register its creation date, its name or anything but its content
+- Contains binary stream of data
+
+Tree:
+- Directory Structure
+- Refers to blobs as well as other trees
+- Identified by SHA-1 hashes
+
+Commit:
+- snapshot
+- HEAD points to latest commit in branch
+- Identified by SHA-1 Hashes
+- Every commit holds entire snapshot, thats why its easy to check differences
+- Contains blob files and trees
+
+

@@ -150,4 +150,5 @@ Commit:
 - Every commit holds entire snapshot, thats why its easy to check differences
 - Contains blob files and trees
 
+## Git Data Storage
 

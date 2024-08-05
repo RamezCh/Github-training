@@ -61,3 +61,14 @@ When creating a new branch, it will be on local machine and will not be accessib
 ## Master Branch
 Git automatically creates a master branch when first commit in a repository is made. All commits by default are done in master branch unless a new branch is created explicitly. Developers must NOT make changes directly in master branch, rather should use feature branch.
 
+## Feature Branch
+To work on a new feature/bug fix. Multiple feature branches can be created for specific needs. Bugfix branch, new feature development branch. Helps to avoid disrupting source code every time an update is needed. All feature branches may not be merged into develop branch.
+
+## Release Branch
+Create a release branch one changes in a develop branch are done. Release branch helps to make sure that no further commits are done. It is merged with the Master branch after final check. It gets created close to production release.
+- name usually begins with prefix 'release-'
+- addresses bug fixes and release-related issues
+- only when final code is ready, release branch is created
+- when everything okay, we merge it with master branch
+
+

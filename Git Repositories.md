@@ -186,3 +186,22 @@ What is an "Upstream"?
 
 In Git terminology, "upstream" typically refers to the original repository from which you forked your repository. By adding an upstream remote, you can fetch updates from the original repository to keep your fork in sync with the latest changes. This is particularly useful when collaborating on projects where you need to stay up-to-date with the latest developments from the main project.
 
+## Clone Vs Fork
+- Clone brings remote repo to local repo ( We have permissions/access )
+- Fork brings remote repo into our own Github acc, after doing changes we do a pull request with original repo for them to accept our changes ( We don't have permissions )
+
+## Git vs GitHub
+Git:
+- Software
+- Command line tool and GUI
+- Maintained by Linux
+- Focused on version control and code sharing
+- No user management feature
+
+GitHub:
+- Service
+- GUI
+- Maintained by Microsoft
+- Focused on centralized source code hosting platforms
+- Built-in user management feature
+

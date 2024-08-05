@@ -150,3 +150,20 @@ To take latest changes from the remote:
 OR:
 - git pull <remote-repo> <remote-branch>
 
+## Git Clone
+Used to Copy repo from remote to local repo.
+- git clone <repo URL> master branch is cloned by default 
+- git clone -b <brannch name><repo URL> to clone a specific branch
+- git repo clone https://github.com/cli/cli to clone complete repo
+
+When working with remote repo and downloading it locally for the first time we use git clone.
+- git pull to get latest changes
+- git pull <repo URL>
+- git checkout --<filename> to get specific vresion or branch from local repo
+- git checkout <branch name>
+
+Before push/pull we need to:
+- git remote add origin <server_name>
+- git remote -v to validate
+- git push origin master
+

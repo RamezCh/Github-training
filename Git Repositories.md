@@ -205,3 +205,26 @@ GitHub:
 - Focused on centralized source code hosting platforms
 - Built-in user management feature
 
+## DEMO
+- Create Repo
+- Give Description (optional)
+- Choose Public/Private
+- Do you want README added by default? GitIgnore? License?
+- There are .gitignore templates, can choose by language
+- License file = Who can use our code, edit our code, copy our code
+- After clicking next they show you initialization guide
+- Go to Remote repo -> Clone (Can Just click it GUI or copy link and use it in CLI)
+- git clone <link remote repo>
+- cd <name of cloned repo>
+- cat Readme.md
+- git add .
+- git commit -m "First commit"
+- git status
+- git push origin main
+- Refresh remote repo, you can see the README file now
+- We can see commit history as well
+- git log
+- git fetch origin main
+- git log
+- git pull origin main
+- git log

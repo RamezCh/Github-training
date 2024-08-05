@@ -31,3 +31,13 @@ A Basic approach followed in any version control system. Independent development
 - git push origin --delete <old-name> to delete branch from remote repo
 - git push -u origin <new-name> to publish new branch to remote repo
 
+## Track and Delete Branch
+- git branch -u helps in tracking changes and synchronizing with the remote branch
+- git branch -vv show a list of all local branches along with their latest commit details and their upstream branches if they are set
+- git push -u origin <local-branch> pushes the specified local branch to the remote repository and sets the upstream (tracking) branch for it. This means future git push and git pull commands can be executed without specifying the branch name
+- git branch --track <new-branch> origin/<base-branch> useful for creating a new branch that is based on an existing remote branch
+- git checkout --track origin/<base-branch> checks out a local branch that tracks the specified remote branch. If the local branch does not exist, it will be created
+- git branch -d my-new-branch  it’s a safe way to delete branches you have already merged
+- git branch -D my-new-branch forces the deletion of the specified branch, even if it has not been merged
+- git push origin --delete <branch-name> deletes the specified branch from the remote repository. This is useful for cleaning up old or unused branches on the remote
+

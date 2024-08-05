@@ -63,3 +63,17 @@ Bypassing Staging:
 - git commit -a (adds all files available in repo)
 - git commit -am "message"
 
+## Revert a Commit
+Done when changes aren't correct and need to be fixed
+- git revert <commitHash>
+- git log to find commitHash
+- Revert is undo, going back in time
+- Will not remove log, will be seen as a new commit
+
+What if we want to revert a Merge?
+One by one is a pain.
+- Merging is a commit that has at least two parents: Main commit, Merge commit
+- We need to rollback parent as well
+- git revert <commit reference> -m 1
+- -m 1 is used for the first parent ( to roll back)
+

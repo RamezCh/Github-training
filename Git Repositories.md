@@ -128,3 +128,25 @@ How to upload public key into github:
 - Public key will be uploaded into remote repo
 - Using public key comunications will be conducted
 
+## Git Push and Fetch Branch
+- git remote set-url origin git@github.com:<username>/<local repo name>.git
+- git push -u origin master
+- Pushes the local content on the master branch of the remote location
+- git push
+- git pull fetches and merges from remote repo
+- git fetch downloads commits, objects and refs from remote repo but no merge
+- git fetch <repo URL>
+- gitch fetch <branch URL><branch name>
+- git fetch -all
+- They all work since origin is default and takes current branch
+- git pull (works on current branch)
+- git pull origin master (remote name, repo url)
+- git pull -all (pulls all branches)
+
+To take latest changes from the remote:
+- git fetch <remote>
+- git merge FETCH_HEAD
+
+OR:
+- git pull <remote-repo> <remote-branch>
+

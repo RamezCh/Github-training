@@ -172,3 +172,17 @@ Before push/pull we need to:
 - git branch -D branch_name deletes local and remote branches
 - git push origin --delete branch_name deletes only remote repo branch
 
+## Fork a Repo
+It is a good way of working or collaborating on Public repo. We aren't author, no permissions so we need to fork. Fork creates a personal repo of a public repo into Github Acc.
+- You can use GUI to Fork as simple as a btn click
+- github repo fork <public repo> this forks into GitHub acc
+- github repo fork <public repo> --clone this forks to Github acc and clones to local repo
+- git remote add upstream https://Github.com/MyGITProject/Commerce-DevOps.git
+- git remote add: This is the Git command to add a new remote repository.
+- upstream: This is the name you are giving to the new remote repository. It is a common convention to name the original repository you forked from as "upstream".
+- https://Github.com/MyGITProject/Commerce-DevOps.git: This is the URL of the remote repository you are adding.
+
+What is an "Upstream"?
+
+In Git terminology, "upstream" typically refers to the original repository from which you forked your repository. By adding an upstream remote, you can fetch updates from the original repository to keep your fork in sync with the latest changes. This is particularly useful when collaborating on projects where you need to stay up-to-date with the latest developments from the main project.
+

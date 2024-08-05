@@ -77,3 +77,39 @@ One by one is a pain.
 - git revert <commit reference> -m 1
 - -m 1 is used for the first parent ( to roll back)
 
+## Git Reset
+We are at head, we have v1 of file.txt. In working directory we have v2 of file.txt.
+- For a Specific file
+- For a repo
+- git reset file.txt
+- git status
+- git reset --hard will reset multiple files
+- git reset --main/file.txt resets one file only
+
+Reset has 3 flags: --soft, --mixed, --hard
+- soft: git reset --soft <commit-id>
+- it removes files from local repo only, not staging nor working directory
+- hard: all changes made are completely removed, HEAD moved backward, can't see content again
+- mixed: removes from staging and local but keeps them at working directory
+
+Use case:
+- git reset -- main/*
+- commit will be reverted and removes from log history
+- HEAD moves from latest to one step down
+- git reset --soft HEAD^
+- means that the commit is cancelled and moved before HEAD
+- Add another file to the staging area and commit or amend files and commit
+
+Revert all changes to a file:
+- git diff <fileName>
+- git checkout <fileName> discards all changes made in a file
+- git reset --hard discards all changes on the branch
+
+In simple terms:
+- soft makes them as if you did git add and didn't do git commit
+- hard removes all traces of the crime
+- mixed as if you didn't do git add nor git commit, they are just a file present in repo
+
+- git checkout <commit> cleans it completely
+- reset [commit] <paths> working directory is safe
+- checkout [commit] <paths> working directory isn't safe

@@ -70,3 +70,22 @@ Other similar services:
 - Perforce
 - SourceForge
 
+## Github Features
+1. Effective Team Management
+- Github supports and organizes all team members on one page
+- Team can callaborate with each other
+2. Accessibility
+- Can create numbers of public and private repositories
+3. Integration
+- Easy to Integrate with other DevOps toos like Jira, Jenkins
+4. Improved Code Writing
+- Assists code review
+- Assists code approval
+5. Increased Code Safety
+- Identifies vulnerabilites in the code
+- Enables collaboration to secure end-to-end
+6. Easy Code Hosting
+- Single location for all the code and documentation
+- Easy GUI
+
+GitHub has various plans: free, team, enterprise. 

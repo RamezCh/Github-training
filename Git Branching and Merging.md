@@ -41,3 +41,13 @@ A Basic approach followed in any version control system. Independent development
 - git branch -D my-new-branch forces the deletion of the specified branch, even if it has not been merged
 - git push origin --delete <branch-name> deletes the specified branch from the remote repository. This is useful for cleaning up old or unused branches on the remote
 
+## Check diff between Branches
+- git diff <branch-name>
+
+## Push and Commit Changes
+When creating a new branch, it will be on local machine and will not be accessible to teammates until it is pushed to the remote repository. To collaborate or share push local branch to remote repository
+- git push origin <branchName>
+- git branch -v = list of branches
+- git push <remote> <branchName> = push a specific branch
+- git push <remote> = push current branch
+

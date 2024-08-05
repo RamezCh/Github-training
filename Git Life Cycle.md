@@ -151,4 +151,30 @@ Commit:
 - Contains blob files and trees
 
 ## Git Data Storage
+Git only stores the contents of the history tracking file, not just the differences between files for every change. Much of every item has SHA, first seven characters are usually sufficient. Content is referenced by a 40-character SHA1, which means that it is unique.
 
+## DEMO
+- git init sample_repo
+- cd sample_repo
+- git status
+- touch Readme.md
+- ls -alrt
+- git status
+- git add Readme.md
+- git status
+- touch example.txt
+- git status
+- git commit -m "First Commit"
+- git status
+- git log
+- git show <commit id>
+- clear
+- git status
+- git restore Readme.md
+- git status
+- git reset --hard
+- git status
+- git add example.txt
+- git status
+- git reset --hard
+- git status

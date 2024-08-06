@@ -125,6 +125,11 @@ There is a mergetool:
 - git mergetool
 - Shows where problem at (differences/conflicting value)
 
+How to Avoid Merge Conflict?
+- Talk to team and decide who is primarily responsible for editing which files
+- Review mechanism can also be added
+- No one outside team should access files
+
 
 
 

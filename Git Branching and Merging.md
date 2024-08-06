@@ -71,4 +71,11 @@ Create a release branch one changes in a develop branch are done. Release branch
 - only when final code is ready, release branch is created
 - when everything okay, we merge it with master branch
 
+## Hotfix Branch
+Used to add a critical fix to the production codebase. Used if issues happen in production environment and want to avoid the full cycle of development. Hotfix branch is merged with master and back merged with development branch. It starts with 'hotfix-' prefix.
+
+## Develop/Integration Branch
+Used for development. All feature branches will be merged to the integration/develop branch. It should always be stable and can be direcly merged with master.
+
+
 

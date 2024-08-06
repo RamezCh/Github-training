@@ -254,6 +254,23 @@ Rebase > Merge when:
 - can cahnge the order of commits
 - helps clean the history
 
+## Git Rebasing - DEMO
+End result in rebasing is almost the same as merging.
+- git branch -l
+- git checkout -b develop
+- echo "Adding New Content" >> Readme.md
+- git status
+- git add Readme.md
+- git status
+- git commit -m "Commit in Develop Branch"
+- git log
+- git checkout master
+- git branch
+- git rebase develop
+- git branch
+- git log
+Notice, commit in develop branch came to master and looks as if it was a local commit.
+
 
 
 

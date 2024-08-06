@@ -130,6 +130,29 @@ How to Avoid Merge Conflict?
 - Review mechanism can also be added
 - No one outside team should access files
 
+## DEMO
+- git branch -l
+- git checkout -b develop
+- git branch -l
+- echo "Adding Content in Develop Branch" >> Readme.md
+- git status
+- git diff
+- git log
+- git add .
+- git commit -m "Commit in Develop Branch"
+- git status
+- git checkout master
+- git log
+- git merge develop
+- git log
+- cat Readme.md
+- git reset --hard <commitID>
+- git log
+- git merge develop --no-ff
+- Editor opens to show message
+- git log
+ 
+
 
 
 

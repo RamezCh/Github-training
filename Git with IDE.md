@@ -17,3 +17,10 @@ VSCode has in-built support for Git. Extension for other source control provider
 - Project Manager: Helps in managing projects, imports repo and exports
 - Git lens: Built-in dashboard, valuable insights
 - .gitignore: Multi-language support for .gitignore files
+
+- You can check status on sidebar, circle connected to two other circles (icon representing branches).
+- You can also write commit message and press enter in input field on sidbar.
+- 3 dots icon has branch creation, switching, merge, rebasing, deleting and add file to staging area features.
+- When you click on a file there is a plus symbol that allows you to add file to staging
+- There is arrow pointing backward which roll backs the changes
+- 

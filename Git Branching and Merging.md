@@ -152,7 +152,38 @@ How to Avoid Merge Conflict?
 - Editor opens to show message
 - git log
  
+Merge Strategies:
+- Recursive
+- Resolve
+- Octopus
+- Ours
+- Subtree
 
+Recursive:
+- detect and manage mergers
+- default strategy
+- git merge -s recursive branch1 branch2
 
+Resolve:
+- 3 way merge
+- resolves maximum of 2 commits
+- git merge -s resolve branch1 branch2
+- provides very fast resolution
+
+Octopus:
+- dealing with 2 or more branches
+- git merge -s octopus branch1 branch2 branch3 branchN
+- does NOT allow manual conflict resolution
+- more than one branches can be merged
+
+Ours:
+- does NOT consider the changes from feature branch in case of conflict and uses our changes
+- All the changes from feature branch is ignored and changes from master branch will be considered
+- git merge -s ours branch1 branch2 branchN
+
+Subtree:
+- merging trees which have common ancestor
+- git merge -s subtree branch1 branch2
+- they need to have common ancestor
 
 

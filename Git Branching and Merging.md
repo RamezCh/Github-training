@@ -77,5 +77,29 @@ Used to add a critical fix to the production codebase. Used if issues happen in 
 ## Develop/Integration Branch
 Used for development. All feature branches will be merged to the integration/develop branch. It should always be stable and can be direcly merged with master.
 
+## Git Merge
+Multiple developers work on local repo on specific feature branch.
+- git merge <branchName>
+
+Example:
+- git log
+- git checkout master
+- git merge develop
+
+## Types of Merging:
+- Two-way Merge
+- Three-way Merge
+
+Two-Way Merge: (two snapshots)
+- feature branch to master branch
+- When merging occurs they compare both latest commits
+- After comparison the final result comes in
+
+Three-way Merge: (three snapshots)
+- Similar to Two-Way Merge but Master branch has new commit that isn't common ancestor with featuer branch
+- It compares 3 points and then merges
+
+## Merge Conflict
+
 
 

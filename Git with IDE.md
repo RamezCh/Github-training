@@ -24,4 +24,10 @@ VSCode has in-built support for Git. Extension for other source control provider
 - When you click on a file there is a plus symbol that allows you to add file to staging
 - There is arrow pointing backward which roll backs the changes
 
- 
+## IntelliJ IDE
+Best Features:
+- Smart Code Completion (Context based coding, Auto-completion feature)
+- Chain Code Completion (Provides all context-based options)
+- Static Member's Completion (if you forget import, it imports and so on)
+- Detecting Duplicates (Finds duplicate code or variable)
+- Inspections and Quick-fixes

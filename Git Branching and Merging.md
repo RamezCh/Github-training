@@ -100,6 +100,31 @@ Three-way Merge: (three snapshots)
 - It compares 3 points and then merges
 
 ## Merge Conflict
+If two or more team members work in the same file simultaneously. Overlap of work may result in a conflict at the time of merging. During the integration of different feature branches into the develop branch may cause conflicts
+
+Scenario:
+- Henry pushes into Remote repo
+- John tries to Push but merge conflict appears
+- Why? Remote repo isn't same one as John has, there are more differences!
+- git status (to see whats missing/wrong)
+- Recommendation: Synchronize local repo with remote (Push/Pull) frequently
+1. Open the conflicted file and make the necessary changes
+2. Use git add command to stage the newly merged content
+3. Perform a new commit using git commit command
+4. Git creates a merge automatically
+
+Commands to resolve conflicts:
+- git log --merge (list of conflicting commits)
+- git diff (shows differences)
+- git checkout (to reverse the file changes or to change branches)
+- git reset --mixed
+- git merge --abort (exits merge and return to state before merge started)
+- git reset
+
+There is a mergetool:
+- git mergetool
+- Shows where problem at (differences/conflicting value)
+
 
 
 

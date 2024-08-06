@@ -23,4 +23,5 @@ VSCode has in-built support for Git. Extension for other source control provider
 - 3 dots icon has branch creation, switching, merge, rebasing, deleting and add file to staging area features.
 - When you click on a file there is a plus symbol that allows you to add file to staging
 - There is arrow pointing backward which roll backs the changes
-- 
+
+ 

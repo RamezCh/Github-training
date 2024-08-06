@@ -186,4 +186,45 @@ Subtree:
 - git merge -s subtree branch1 branch2
 - they need to have common ancestor
 
+## Merge Conflicts DEMO (Manual Fix)
+Git can't make a decision, so we need a strategy to solve it
+- vi sample.java
+- git status
+- git add sample.java
+- git status
+- cat sample.java
+- function1(){}
+- git commit -m "added function1"
+- git log
+- ls -lart
+- git branch develop
+- git branch -l
+- vi sample.java
+- cat sample.java
+- function3(){}
+- git add sample.java
+- git commit -m "adding function3"
+- git status
+- git checkout develop
+- cat sample.java
+- vi sample.java
+- function2(){}
+- git add sample.java
+- git commit -m "Adding function2"
+- git log
+- git checkout master
+- git log
+- git merge develop
+- merge conflict
+- git status
+- cat Readme.md
+- cat sample.java
+- <<<<< means from Head
+- >>>>>>> means from branch
+- git vi sample.java
+- git status
+- git add .
+- git commit -m "merging develop to Master"
+- git log
+
 

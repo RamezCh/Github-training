@@ -227,4 +227,36 @@ Git can't make a decision, so we need a strategy to solve it
 - git commit -m "merging develop to Master"
 - git log
 
+## Rebase
+Rebase is a single patch for all changes
+- Copy the change and implement in a branch as a patch
+- No merge commit will be created in the destination branch
+- Seems like a local commit
+- Another way to integrate changes between branches
+- git rebase <branchName>
+Unlike merging, rebasing flattens the history because it transfers the complete work from one branch to another.
+- Cleans the history, shows only commits done by developers and removes unnecessary commit information from history
+- Merging becomes very clean
+
+Why Rebase?
+- Cleans the history
+- Easy to manipulate any commit
+- Avoids merging noise
+- Cleans intermediate commits by making them a single commit
+
+Merge > Rebase when:
+- add branch changes back to base branch
+- keep same history rather than rewrite it
+- revert the changes quickly
+
+Rebase > Merge when:
+- squash multiple commits
+- can cahnge the order of commits
+- helps clean the history
+
+
+
+
+
+
 

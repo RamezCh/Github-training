@@ -13,3 +13,18 @@ Offering:
 - Complete DevOps platform is supported by GitLab
 - Provides CI/CD pipelines which helps DevOps operations
 
+You can be an admin user and create other users.
+
+on top bar -> Menu -> Admin area -> Users -> New User
+
+## Working using GitLab
+- Click on GitLab
+- Click on New Project
+- Visibility level: private
+- Lock symbol = private project
+- Choose Settings (Repo)-> Members -> Add Collaborators -> Give them Access/permissions
+- We can also import members from another project to our project
+- We can setup Access expiration date for members
+
+
+

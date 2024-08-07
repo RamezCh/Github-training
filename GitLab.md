@@ -26,5 +26,29 @@ on top bar -> Menu -> Admin area -> Users -> New User
 - We can also import members from another project to our project
 - We can setup Access expiration date for members
 
+## Working with GitLab Remote Repo
+- Login
+- Choose Repo or Create
+- https://gitlab.com/gitlab-tests/sample-project
+- Fork above repo as its provided by GitLab for Practice
+- Every Remote Repo has URL
+- There are 2 types: HTTPS requires user and pass/SSH password-less, requires key-pair
+- You can use Git Bash or Power Shell editor
+- git clone https://gitlab.com/gitlab-tests/sample-project.git
+- mkdir directoryname makes an empty folder
+- git init converts folder into a git repo
+- git remote add origin <repoURL>
+- git remote -v
+
+## Branch Names
+Can:
+- User lowercase letters
+- numbers
+- hyphens
+- underscore
+Can NOT:
+- contain empty space
+- special characters
+
 
 

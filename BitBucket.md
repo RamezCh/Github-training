@@ -44,3 +44,15 @@ Organize BitBucket Project on Server
 - Composition of repo
 - Makes it easier for teams to work together
 
+## BitBucket Pipeline
+- Code Change -> BitBucket
+- Build App, Test App -> Maven -> Jar > Docker Image > Docker registry
+- Build docker image, push docker image > Docker > Docker registry
+- Deploy App -> Kubernetes Cluster -> Docker Registry
+
+- Helps implement CI/CD
+- Connect to tany cloud, on-premises
+- No need to create third party infrastructure
+- already have runners to run CI/CD pipeline
+- Specific quota will be given on how much minutes one can run
+

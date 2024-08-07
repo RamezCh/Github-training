@@ -29,3 +29,18 @@ Organize BitBucket Project on Server
 
 - Jira tool used for issue management
 - Recording of issues
+
+## Key Terms to Know
+1. Pipelines
+- An integrated CI/CD service no need for Jenkins, TeamCity or Bamboo
+- Build automation Deployment
+- Provides end to end pipeline
+- Usage quota - in minutes
+2. Pipes
+- Pre-defined workflows to automate CI/CD pipeline
+- Configure as per the specific need
+- Automatically generates pre-defined pipelines which can be easily integrated
+3. Project
+- Composition of repo
+- Makes it easier for teams to work together
+

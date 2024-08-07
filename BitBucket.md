@@ -56,3 +56,10 @@ Organize BitBucket Project on Server
 - already have runners to run CI/CD pipeline
 - Specific quota will be given on how much minutes one can run
 
+## Working with remote BitBucket repo
+- Need Bitbucket cloud acc
+- Need Git
+- Git commands (clone, branch, checkout)
+
+Your work - > New Repo -> Fill Details
+
